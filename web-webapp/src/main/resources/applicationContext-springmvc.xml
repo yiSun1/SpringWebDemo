@@ -88,7 +88,6 @@
 
     </bean>
 
-
     <!-- 禁用了原有属性：layoutUrl，layoutKey，screenContentKey，dateToolAttribute，numberToolAttribute，toolboxConfigLocation-->
     <bean id="viewResolver"
           class="com.yisun.web.common.view.LenovoVelocityLayoutViewResolver">

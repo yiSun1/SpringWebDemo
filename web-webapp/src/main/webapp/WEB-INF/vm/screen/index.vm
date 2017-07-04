@@ -1,0 +1,520 @@
+
+        <div id="o-breadcrumb">
+            <p class="i-item">当前位置：首页</p>
+        </div>
+        <!-- o-welcomePage begin -->
+        <div id="o-welcomePage">
+            <div class="i-userinfo"><span class="i-name"><strong>张小军</strong>，欢迎登录中粮我买网SCM供应链管理系统</span></div>
+            <div class="i-messageBlock">
+                <div class="i-zeroGoods i-inner">
+                    <h3>我的库存为 0 的商品</h3>
+                    <ul>
+                        <li><span class="i-name">23个中字截断</span></li>
+                        <li><span class="i-name">MAMMA妈妈布书 益智玩具 婴幼儿游戏垫健身架</span></li>
+                        <li><span class="i-name">补贴价1499！LG32英寸LED液晶电视</span></li>
+                        <li><span class="i-name">补贴价1499！LG32英寸LED液晶广角电视</span></li>
+                        <li><span class="i-name">补贴价1499！LG32LED液晶电视</span></li>
+                    </ul>
+                    <div class="i-more"><a href="#">查看更多</a></div>
+                </div>
+                <div class="i-orderForm i-inner">
+                    <h3>我的订单信息</h3>
+                    <ul>
+                        <li>初始状态订单数量：<span class="i-num">10 </span>，<a href="#">查看</a></li>
+                        <li>分仓确认订单数量：<span class="i-num">100 </span>，<a href="#">查看</a></li>
+                        <li>　待出库订单数量：<span class="i-num">20 </span>，<a href="#">查看</a></li>
+                        <li>等待退货订单数量：<span class="i-num">2 </span>，<a href="#">查看</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- o-welcomePage end -->
+
+        <div id="o-breadcrumb">
+            <p class="i-item">当前位置：<a href="">首页</a>&nbsp;<code>&gt;</code>&nbsp;订单管理 - 订单查询</p>
+        </div>
+        <div id="o-title">
+            <h3>供应商信息管理</h3>
+            <div class="i-right"><a href="#">仓库列表</a>&#12288;<a href="#">商品申请库存调整单列表</a></div>
+        </div>
+
+        <!-- o-serch begin -->
+        <div id="o-serch">
+            <div class="i-boxsearch">
+                <table width="99%" border="0" cellspacing="0" cellpadding="0" class="i-notable">
+                    <tr>
+                        <td><label for="idinput1">供应商编号：</label>
+                            <input type="text" maxlength="10" value="" name="nameinput" id="idinput1" size="20"></td>
+                        <td><label for="idinput2">供应商名称：</label>
+                            <input type="text" maxlength="10" value="" name="nameinput" id="idinput2" size="20"></td>
+                        <td><select name="comStatus" class="i_comselect" id="o-comStatus">
+                            <option value="ALL">全部</option>
+                            <option value="NOT_PAID">等待买家付款</option>
+                            <option value="PAID">买家已付款</option>
+                            <option value="SEND">卖家已发货</option>
+                            <option value="SUCCESS">交易成功</option>
+                            <option value="DROP">交易关闭</option>
+                            <option value="REFUNDING">退款中的订单</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="idinput1">供应商编号：</label>
+                            <input type="text" maxlength="10" value="" name="nameinput" id="idinput1" size="20">
+                            <i>*</i></td>
+                        <td><label for="idinput2">供应商名称：</label>
+                            <input type="text" maxlength="10" value="" name="nameinput" id="idinput2" size="20">
+                            <i>*</i></td>
+                        <td><span class="i-btn">
+              <button type="submit">搜 索</button>
+              </span>　<span class="i-btn"><a href="#">搜 索</a></span>　<span class="i-btn i-btn2"><a href="#">搜
+                            索</a></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- o-serch end -->
+
+        <div class="o-con">
+            <div class="i-con">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="i-table">
+                    <tr>
+                        <th>id</th>
+                        <th>姓名</th>
+                        <th>供应商名称</th>
+                        <th>状态</th>
+                        <th>冻结</th>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td><a href="#">张开</a></td>
+                        <td><a href="#">北京新希望</a></td>
+                        <td><a href="#">正常</a></td>
+                        <td><a href="#">否</a></td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                </table>
+                <div class="i-page"><a href="#">&lt;上一页</a><a href="#">1</a><strong>2</strong><a href="#">3</a><a
+                        href="#">4</a><a href="#">下一页&gt;</a><span>共849行</span></div>
+            </div>
+        </div>
+
+        <div class="o-con">
+            <div class="i-con">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="i-table i-copytable">
+                    <tr>
+                        <th>id</th>
+                        <th>姓名</th>
+                        <th>供应商名称</th>
+                        <th>状态</th>
+                        <th>冻结</th>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td><a href="#">张开</a></td>
+                        <td><a href="#">北京新希望</a></td>
+                        <td><a href="#">正常</a></td>
+                        <td><a href="#">否</a></td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>100012</td>
+                        <td>张开</td>
+                        <td>北京新希望</td>
+                        <td>正常</td>
+                        <td>否</td>
+                    </tr>
+                </table>
+                <div class="i-page"><a href="#">&lt;上一页</a><a href="#">1</a><strong>2</strong><a href="#">3</a><a
+                        href="#">4</a><a href="#">下一页&gt;</a><span>共849行</span></div>
+            </div>
+        </div>
+        <div class="o-con">
+            <h3 class="i-info24-title">供应商基本信息</h3>
+
+            <div class="i-info24">
+                <div class="i-left">
+                    <p>
+                        <label for="idinput1">公司名称：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+
+                    <p>
+                        <label for="idinput1">纳税号：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+
+                    <p>
+                        <label for="idinput1">英文名：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+                </div>
+                <div class="i-right">
+                    <p>
+                        <label for="idinput1">公司地址：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+
+                    <p>
+                        <label for="idinput1">邮政邮编：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+
+                    <p>
+                        <label for="idinput1">固定电话：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+                </div>
+            </div>
+            <div class="i-info24">
+                <div class="i-left100">
+                    <p>
+                        <label for="idinput1">纳税号：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+
+                    <p>
+                        <label for="idinput1">英文名：</label>
+                        <input type="text" maxlength="50" value="" name="nameinput" id="idinput1" size="30">
+                    </p>
+                </div>
+            </div>
+
+            <div class="i-info24-btn">
+                <div id="showMsg" class="i-msgno4">资料修改成功。</div>
+                <span class="i-btn i-btn2"><a href="#">保存</a></span>&#12288;<span class="i-btn i-btn2"><a
+                    href="#">重置</a></span></div>
+        </div>
+        <div class="i-msgno">
+            <dl>
+                <dt></dt>
+                <dd>没有符合条件的记录，请尝试其他搜索条件。</dd>
+            </dl>
+        </div>
+        <div class="i-msgno2">
+            <dl>
+                <dt></dt>
+                <dd>没有符合条件的记录，请尝试其他搜索条件。</dd>
+            </dl>
+        </div>
+
+        <div class="i-msgno3">
+            <div class="i-msgnoBox">
+                <dl>
+                    <dt></dt>
+                    <dd>资料修改成功。</dd>
+                </dl>
+            </div>
+        </div>

@@ -1,0 +1,43 @@
+<head>
+    <title>$!title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+
+    <style type="text/css">
+        td[role="gridcell"] {
+            text-overflow: ellipsis;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/js/jquery-ui/jquery-ui.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/jqgrid/ui.jqgrid.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/jqgrid/style.css" type="text/css"/>
+
+    <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui/jquery-ui.min.js"></script>
+    <!-- jqgrid 表格插件-->
+    <script type="text/javascript" src="/js/jqgrid/jquery.jqGrid.src.js"></script>
+    <script type="text/javascript" src="/js/jqgrid/i18n/grid.locale-cn.js"></script>
+    <script type="text/javascript" src="/js/jqgrid/i18n/grid.locale-en.js"></script>
+    <!-- validation 表单验证插件-->
+    <script type="text/javascript" src="/js/validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/validation/localization/messages_zh.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.cycle.all.min.js"
+            language="javascript"></script>
+    <script type="text/javascript" src="/js/paycommon.js"></script>
+    <script type="text/javascript" src="/js/jqgrid/jqgridcommon.js"></script>
+    <!-- 日期控件 -->
+    <script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="/js/quickQuery.js"></script>
+
+    <script type="text/javascript" src="/js/common.js"></script>
+    <!--树控件 -->
+    <script type="text/javascript" src="/js/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="/js/jquery.ztree.excheck-3.5.js"></script>
+    <link rel="stylesheet" href="/css/zTreeStyle/zTreeStyle.css" type="text/css">
+</head>

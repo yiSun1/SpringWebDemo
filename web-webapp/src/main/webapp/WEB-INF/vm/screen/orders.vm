@@ -1,0 +1,94 @@
+<a name="s-top" id="s-top"></a>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<header>
+    <div class="s-topbar">
+        <div class="s-return"><a href="javascript:history.go(-1);" class="s-bg2">返回</a></div>
+        <h1>我的订单</h1>
+    </div>
+</header>
+<form action="$!homeModule.getTarget('/paytest.jhtm')" method="post" id="ordersform">
+        <div>
+            <ol class="s-114 s-pb10 s-mh250" id="content">
+   <span class="s-jvBorder s-block"><a href="javascript:void(0);" class="s-jvBtn s-Btn34"
+                                       onclick="payOrder('1111','1111','1111')">立即付款</a></span>
+            </ol>
+        </div>
+</form>
+<script type="text/javascript" language="javascript">
+
+
+    function payOrder(orderid,paymodeId,outTradeNo) {
+        $("#orderid").val(orderid);
+
+
+            var uaWeixin = window.navigator.userAgent.toLowerCase();
+            var BBweixin = /(micromessenger\/)([5-9]{1}|[1-9][0-9]+)./.test(uaWeixin);
+            if(uaWeixin.match(/MicroMessenger/i) != 'micromessenger' || BBweixin == false){
+                alert("请在微信平台（5.0及以上版本）进行微信支付！");
+                return false;
+            }
+            var postJson = {
+                "outTradeNo": outTradeNo
+            };
+            jQuery.ajax({
+                type: 'POST',
+                url: "$!homeModule.getTarget('testpay')",
+                async: false,
+                cache: false,
+                data: postJson,
+                dataType: 'json',
+                success: function (data) {
+                    var appid = "";
+                    var timeStamp = "";
+                    var nonceStr = "";
+                    var packageValue = "";
+                    var paySign = "";
+                    var signType = "";
+
+                    jQuery.each(data, function (key,value){
+                        if(key == "appid"){
+                            appid = value;
+                        }
+                        if(key == "timeStamp"){
+                            timeStamp = value;
+                        }
+                        if(key == "nonceStr"){
+                            nonceStr = value;
+                        }
+                        if(key == "packageValue"){
+                            packageValue = value;
+                        }
+                        if(key == "paySign"){
+                            paySign = value;
+                        }
+                        if(key == "signType"){
+                            signType = value;
+                        }
+                    });
+                        WeixinJSBridge.invoke('getBrandWCPayRequest', {
+                            "appId": appid,
+                            "timeStamp": timeStamp,
+                            "nonceStr": nonceStr,
+                            "package": packageValue,
+                            "signType": signType,
+                            "paySign": paySign
+                        },function (res) {
+
+                            var msg= new Array();
+                            msg = res.err_msg.split(":");
+                            if(msg[1]!=null && msg[1]=="ok" ){
+                                document.getElementById("ordersform").action = "$!homeModule.getTarget('/order/paySuccessWeixin.action')";
+                                document.getElementById("ordersform").submit();
+                            }else if(msg[1]=="cancel"){
+                            }else{
+                                alert("微信服务器异常！");
+                            }
+                        });
+                },
+                error: function (xhr, type) {
+                }
+            })
+
+    };
+
+</script>

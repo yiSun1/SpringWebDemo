@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    #parse("/WEB-INF/vm/common/head.vm")
+
+<body>
+<div>
+    $screen_content
+</div>
+
+<div id="o-dailog"></div>
+<script type="text/javascript" language="javascript">
+    $(function () {
+//Foucs Select td, Change tr.
+        $('.o-con td').hover(function () {
+            $(this).parents("tr").addClass('i-trover');
+        }, function () {
+            $(this).parents("tr").removeClass('i-trover');
+        })
+//end
+//Table Excel Style
+        var oxvalue = $('.i-copytable').length;
+        if (oxvalue > 0) {
+            $('.i-copytable').wrap('<div class="i-copycon" />');
+            $('.i-copycon').before('<div class="i-copythead" />');
+            $('.i-copythead').append($('.i-copytable').clone());
+            $('.i-copycon .i-copytable th').parents('tr').remove();
+            var oxheight = $('.i-copycon .i-copytable').innerHeight() + 5;
+            if (oxheight < 400) {
+                $('.i-copycon').css('height', $('.i-copycon .i-copytable').innerHeight() + 5);
+            } else {
+                $('.i-copycon').css('height', '400px');
+            }
+        }
+//end
+//scrollTop
+        $("#o-tree a").bind('click', function () {
+            $("html,body").animate({scrollTop: $('#o-breadcrumb').offset().top}, 500);
+        });
+//end
+    })
+</script>
+</body>
+</html>

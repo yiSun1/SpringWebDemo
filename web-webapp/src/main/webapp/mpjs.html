@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>微信支付测试</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="m.womai.com" name="author">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="-1" http-equiv="Expires">
+    <meta content="no-cache" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="Pragma">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script language="javascript">
+        function callpay() {
+            alert('开始支付!!!');
+
+            WeixinJSBridge.invoke('getBrandWCPayRequest', {
+                "appId": "wx7b37229179b64bf3",
+                "timeStamp": "1416988643",
+                "nonceStr": "7dcd340d84f762eba80aa538b0c527f7",
+                "package": "attach=%E9%99%84%E4%BB%B6%E5%8C%85%E9%99%84%E4%BB%B6%E5%8C%85%E9%99%84%E4%BB%B6%E5%8C%85%3A20141126912512575&bank_type=WX&body=%E6%B5%8B%E8%AF%95%E8%AE%A2%E5%8D%95&fee_type=1&input_charset=UTF-8&notify_url=http%3A%2F%2Fpaytest.womaiapp.com%2Fweixin%2Fcallback.action&out_trade_no=BJ14261118870022&partner=1218412901&product_fee=9&spbill_create_ip=134.9.8.1&total_fee=10&transport_fee=1&sign=C4D3552BE5903A4E9B0727CF684FF6A9",
+                "signType": "SHA1",
+                "paySign": "7173fb1b1b3629e47704beebe671b3158e7e6dde"
+            }, function (res) {
+                //WeixinJSBridge.log(res.err_msg);
+                alert('back show!!!');
+                alert(res.err_code + res.err_desc + res.err_msg);
+            });
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="callpay()">wx pay test</button>
+</body>
+</html>

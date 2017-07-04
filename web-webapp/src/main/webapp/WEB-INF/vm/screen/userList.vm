@@ -1,0 +1,52 @@
+#set( $title ="用户查询")
+
+<div id="o-breadcrumb">
+    <p class="i-item">当前位置：<a href="">首页</a>&nbsp;<code>&gt;</code>&nbsp;商户管理-商户查询</p>
+</div>
+<div id="o-title">
+    <h3>用户信息管理</h3>
+    <div class="i-right"><a href="#">新增用户</a>&#12288;</div>
+</div>
+
+
+
+<div class="o-con">
+    <div class="i-con">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="i-table">
+            <tr>
+                <th>id</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>创建时间</th>
+                <th>salary</th>
+            </tr>
+            #foreach($user in ${userListPaginated.datas})
+                <tr>
+                    <td>
+                        <a href="$!homeModule.getTarget('getUser.jhtm')?userId=${user.id}">
+                            $!{user.id}
+                        </a>
+                    </td>
+                    <td style="text-align:left">
+                        $!{user.username}
+                    </td>
+                    <td>
+                        ***
+                    </td>
+                    <td>
+                        $dateFormatUtils.format($!{user.createTime})
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            #end
+
+        </table>
+
+        <div class="i-page">
+        #set($pageModule = $!homeModule.getTarget('users'))
+        #showPage($pageModule,$userListPaginated)
+        </div>
+    </div>
+</div>

@@ -85,7 +85,6 @@
                 <prop  key="output.encoding">UTF-8</prop>
             </props>
         </property>
-
     </bean>
 
     <!-- 禁用了原有属性：layoutUrl，layoutKey，screenContentKey，dateToolAttribute，numberToolAttribute，toolboxConfigLocation-->
